@@ -1,0 +1,116 @@
+/* =========================================================
+   CSS Personalizado - ONG Vida e Esperança
+   Complementa o Tailwind CSS com identidade visual própria
+   ========================================================= */
+
+/* Fonte e cores padrão */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb;
+    color: #1f2937;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(90deg, #14b8a6, #0d9488);
+    color: white;
+}
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+header nav a {
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+header nav a:hover {
+    color: #fef08a; /* Amarelo suave */
+}
+
+/* Links ativos */
+header nav a[aria-current="page"] {
+    border-bottom: 2px solid #fef08a;
+}
+
+/* Imagem principal */
+main img {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease;
+}
+main img:hover {
+    transform: scale(1.02);
+}
+
+/* Fieldsets */
+fieldset {
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    padding: 1.5rem;
+    background-color: #ffffff;
+}
+legend {
+    color: #0d9488;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+/* Inputs e Selects */
+input, select {
+    background-color: #f9fafb;
+    transition: all 0.3s ease;
+}
+input:focus, select:focus {
+    background-color: #fff;
+    border-color: #0d9488;
+    box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.3);
+}
+
+/* Botão principal */
+button {
+    background-color: #14b8a6;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 2rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover {
+    background-color: #0d9488;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(13, 148, 136, 0.3);
+}
+
+/* Rodapé */
+footer {
+    background: #0f172a;
+    color: #f9fafb;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.95rem;
+}
+footer p {
+    opacity: 0.8;
+}
+footer p:hover {
+    opacity: 1;
+}
+
+/* Animação sutil na entrada do formulário */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+form {
+    animation: fadeInUp 0.6s ease both;
+}
